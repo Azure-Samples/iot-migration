@@ -1,57 +1,10 @@
-# Project Name
+# Migrating to Azure IoT
 
-(short, 1-3 sentenced, description of the project)
+This repo provides guidance to architects, developers, and IT staff who are looking to migrate their IoT solutions to Azure. The best practices and recommendations are aligned with the [Well-architected framework for IoT](https://techcommunity.microsoft.com/t5/azure-architecture-blog/introducing-azure-well-architected-framework-for-internet-of/ba-p/3288539)
 
-## Features
-
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
-
-## Getting Started
-
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [repository name]
-3. ...
+If you are interested in knowing more about the evaluations that you should make before migrating and also the common strategies for a solution migration from an IoT solution to Azure, please read [Understanding a migration process and best practices to migrate your IoT solution to Azure IoT]() for more information.
 
 
-## Demo
+# Samples
 
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
-
-## Resources
-
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+- [Connecting to Azure IoT using JWT tokens signed using ECC certificates](./ecc-jwt/README.md)
