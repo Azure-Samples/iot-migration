@@ -4,6 +4,15 @@ When the devices are using JWT Tokens in your current solution, and you want to 
 
 ![Provisioning Flow](../images/provisioningflow.png)
 
+1)	Device send the enrollment symmetric key and JWT token signed using ECC private key to Azure Device Provisioning Service.
+2)	Azure Device Provisioning Service validates the symmetric key and sends the provisioning payload to a Function (via HTTP trigger) 
+3)	Azure Function app fetches the public key from secure store such as Azure Key Vault
+4)	Azure Function app verified the JWT token using public key, validates the content and returns linked iotHubHostName. 
+5)	Azure Device Provisioning Service registers a new device in IoT Hub using symmetric key
+6)	Azure Device Provisioning Service returns the IoT Hub device connection details
+7)	Device code connects to IoT Hub using the connection details and starts sending messages
+
+
 Here are the steps to build the above provision flow demo
 
 ## Create ECC certificates
